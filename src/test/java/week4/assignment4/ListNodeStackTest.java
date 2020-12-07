@@ -56,17 +56,13 @@ class ListNodeStackTest {
     stack.push(1);
     stack.push(2);
     stack.push(3);
-    StringBuilder sb2 = stack.getStringBuilder();
-    System.out.println(sb2.toString());
     int data = stack.pop();
     int data2 = stack.pop();
     int data4 = stack.pop();
-    StringBuilder sb3 = stack.getStringBuilder();
-    System.out.println(sb3.toString());
 
     //then
-    //assertThat(data).isEqualTo(3);
-    assertThat(stack.size()).isEqualTo(0);
+    assertThat(data2).isEqualTo(2);
+    //assertThat(stack.size()).isEqualTo();
   }
 
   @Test
