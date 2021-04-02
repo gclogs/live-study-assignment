@@ -73,7 +73,7 @@ class ListNodeTest {
     }
 
     @Test
-    void remove_last_element_functional_test() {
+    void remove_rear_element_functional_test() {
         ListNode head = new ListNode(1);
         ListNode node2 = new ListNode(2);
         head.add(head, node2, 1);
